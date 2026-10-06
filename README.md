@@ -125,6 +125,24 @@ npm create vite@latest . -- --template vue
 
 途中で「Current directory is not empty...」と聞かれた場合は、そのまま `y` または Enter を押して進める．
 
+テンプレが作成されたら， `app/src/App.vue` の中身を以下に書き換える．
+
+```vue
+<script setup>
+// ここにJavaScript/TypeScriptを書きます（今回はシンプルなので空でOK）
+</script>
+
+<template>
+  <main>
+    <h1>ハローワールド</h1>
+  </main>
+</template>
+
+<style scoped>
+/* 必要に応じてCSSを書きます */
+</style>
+```
+
 * Vite（ヴィート）とは:
 
 現代のWeb開発で標準的に使われている超高速なフロントエンドのビルドツール(開発サーバ)．
